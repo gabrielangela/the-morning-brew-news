@@ -1,0 +1,226 @@
+{
+  "topStories": [
+    {
+      "section": "World",
+      "subsection": "",
+      "title": "Sample Breaking News: Global Climate Summit Reaches Historic Agreement",
+      "abstract": "World leaders announce unprecedented commitment to renewable energy transition following intensive negotiations at the annual climate summit.",
+      "url": "https://www.nytimes.com/2024/01/15/world/climate-summit-agreement.html",
+      "uri": "nyt://article/sample-1",
+      "byline": "By Jane Smith and John Doe",
+      "item_type": "Article",
+      "updated_date": "2024-01-15T14:30:00-05:00",
+      "created_date": "2024-01-15T12:00:00-05:00",
+      "published_date": "2024-01-15T13:15:00-05:00",
+      "material_type_facet": "News",
+      "kicker": "Climate Change",
+      "des_facet": ["Climate Change", "International Relations", "Energy Policy"],
+      "org_facet": ["United Nations", "European Union"],
+      "per_facet": ["Jane Smith", "John Doe"],
+      "geo_facet": ["Geneva", "Switzerland"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2024/01/15/world/climate-summit/climate-summit-superJumbo.jpg",
+          "format": "superJumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Delegates celebrate after reaching the climate agreement at the UN headquarters in Geneva.",
+          "copyright": "Reuters"
+        }
+      ],
+      "short_url": "https://nyti.ms/sample1"
+    }
+  ],
+  "mostPopular": [
+    {
+      "uri": "nyt://article/popular-1",
+      "url": "https://www.nytimes.com/2024/01/14/technology/ai-breakthrough.html",
+      "id": 100000001,
+      "asset_id": 100000001,
+      "source": "New York Times",
+      "published_date": "2024-01-14",
+      "updated": "2024-01-14 18:30:00",
+      "section": "Technology",
+      "subsection": "Artificial Intelligence",
+      "nytdsection": "technology",
+      "adx_keywords": "Artificial Intelligence;Technology;Innovation",
+      "byline": "By Sarah Johnson",
+      "type": "Article",
+      "title": "Revolutionary AI System Demonstrates Human-Level Reasoning",
+      "abstract": "Scientists unveil a new artificial intelligence system that can perform complex reasoning tasks previously thought impossible for machines.",
+      "des_facet": ["Artificial Intelligence", "Technology", "Science"],
+      "org_facet": ["OpenAI", "Stanford University"],
+      "per_facet": ["Sarah Johnson"],
+      "geo_facet": ["Silicon Valley", "California"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The new AI system being demonstrated at Stanford University.",
+          "copyright": "Stanford University",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/01/14/technology/ai-system/ai-system-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    }
+  ],
+  "books": {
+    "bestsellers_date": "2024-01-14",
+    "published_date": "2024-01-21",
+    "published_date_description": "latest",
+    "previous_published_date": "2024-01-14",
+    "next_published_date": "",
+    "lists": [
+      {
+        "list_id": 704,
+        "list_name": "Combined Print and E-Book Fiction",
+        "list_name_encoded": "combined-print-and-e-book-fiction",
+        "display_name": "Combined Print & E-Book Fiction",
+        "updated": "WEEKLY",
+        "list_image": null,
+        "list_image_width": null,
+        "list_image_height": null,
+        "books": [
+          {
+            "age_group": "",
+            "amazon_product_url": "https://www.amazon.com/sample-book",
+            "article_chapter_link": "",
+            "author": "Sample Author",
+            "book_image": "https://storage.googleapis.com/du-prd/books/images/sample.jpg",
+            "book_image_width": 330,
+            "book_image_height": 485,
+            "book_review_link": "",
+            "contributor": "by Sample Author",
+            "contributor_note": "",
+            "created_date": "2024-01-01",
+            "description": "A gripping tale of mystery and adventure that captivates readers from the first page.",
+            "first_chapter_link": "",
+            "price": "0",
+            "primary_isbn10": "1234567890",
+            "primary_isbn13": "9781234567890",
+            "publisher": "Sample Publishing",
+            "rank": 1,
+            "rank_last_week": 2,
+            "sunday_review_link": "",
+            "title": "THE SAMPLE MYSTERY",
+            "updated_date": "2024-01-21",
+            "weeks_on_list": 4,
+            "buy_links": [
+              {
+                "name": "Amazon",
+                "url": "https://www.amazon.com/sample-book"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "archive": [
+    {
+      "web_url": "https://www.nytimes.com/2024/01/01/world/sample-archive-article.html",
+      "snippet": "This is a sample archived article from January 2024 showing the structure of archived content.",
+      "lead_paragraph": "Sample lead paragraph for archived article demonstrating the format and structure of NYTimes archive data.",
+      "abstract": "Sample abstract for archived article content.",
+      "source": "The New York Times",
+      "multimedia": [],
+      "headline": {
+        "main": "Sample Archived Article Headline",
+        "kicker": null,
+        "content_kicker": null,
+        "print_headline": "Sample Print Headline",
+        "name": null,
+        "seo": null,
+        "sub": null
+      },
+      "keywords": [
+        {
+          "name": "subject",
+          "value": "Sample Topic",
+          "rank": 1,
+          "major": "N"
+        }
+      ],
+      "pub_date": "2024-01-01T10:00:00+00:00",
+      "document_type": "article",
+      "news_desk": "Foreign",
+      "section_name": "World",
+      "subsection_name": null,
+      "byline": {
+        "original": "By Archive Author",
+        "person": [
+          {
+            "firstname": "Archive",
+            "middlename": null,
+            "lastname": "Author",
+            "qualifier": null,
+            "title": null,
+            "role": "reported",
+            "organization": "",
+            "rank": 1
+          }
+        ],
+        "organization": null
+      },
+      "type_of_material": "News",
+      "_id": "sample-archive-id-1",
+      "word_count": 850,
+      "uri": "nyt://article/sample-archive-1"
+    }
+  ],
+  "searchResults": [
+    {
+      "web_url": "https://www.nytimes.com/2024/01/10/politics/election-coverage.html",
+      "snippet": "Sample search result showing election coverage and political analysis.",
+      "lead_paragraph": "This sample search result demonstrates how election-related articles appear in search responses.",
+      "abstract": "Sample abstract for election search result.",
+      "source": "The New York Times",
+      "multimedia": [
+        {
+          "rank": 0,
+          "subtype": "xlarge",
+          "caption": "Sample election coverage image",
+          "credit": "Sample Photographer/The New York Times",
+          "type": "image",
+          "url": "images/2024/01/10/politics/election-coverage/election-coverage-articleLarge.jpg",
+          "height": 400,
+          "width": 600,
+          "subType": "xlarge",
+          "crop_name": "articleLarge"
+        }
+      ],
+      "headline": {
+        "main": "Sample Election Coverage Headline",
+        "kicker": "2024 Elections"
+      },
+      "keywords": [
+        {
+          "name": "subject",
+          "value": "Elections",
+          "rank": 1,
+          "major": "Y"
+        }
+      ],
+      "pub_date": "2024-01-10T15:30:00+00:00",
+      "document_type": "article",
+      "news_desk": "Politics",
+      "section_name": "Politics",
+      "byline": {
+        "original": "By Political Reporter"
+      },
+      "_id": "sample-search-id-1",
+      "word_count": 1200,
+      "uri": "nyt://article/sample-search-1"
+    }
+  ]
+}

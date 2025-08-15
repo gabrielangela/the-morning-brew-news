@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SearchBar from '@/components/ui/SearchBar';
 
 export default function Header() {
   const currentDate = new Date().toLocaleDateString('en-US', {
@@ -47,6 +48,9 @@ export default function Header() {
           </Link>
         </div>
       </div>
+
+      {/* Search Bar */}
+      <SearchBar />
 
       {/* Navigation */}
       <nav className="border-t border-gray-200">

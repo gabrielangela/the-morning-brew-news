@@ -61,10 +61,8 @@ export default function Footer() {
             <div className="flex flex-wrap items-center space-x-6 text-xs text-gray-600">
               <Link href="#" className="hover:text-black">© 2025 The Morning Brew</Link>
               <Link href="#" className="hover:text-black">Contact Us</Link>
-              <Link href="#" className="hover:text-black">Accessibility</Link>
-              <Link href="#" className="hover:text-black">Work with us</Link>
+              <Link href="#" className="hover:text-black">Work with Us</Link>
               <Link href="#" className="hover:text-black">Advertise</Link>
-              <Link href="#" className="hover:text-black">Your Ad Choices</Link>
               <Link href="#" className="hover:text-black">Privacy Policy</Link>
               <Link href="#" className="hover:text-black">Terms of Service</Link>
             </div>

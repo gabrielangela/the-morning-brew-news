@@ -9,6 +9,18 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'static01.nyt.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.nytimes.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
