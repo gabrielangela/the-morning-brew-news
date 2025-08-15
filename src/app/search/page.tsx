@@ -56,7 +56,7 @@ export default function SearchPage() {
           </h1>
           {query && (
             <p className="text-gray-600">
-              Showing results for: <span className="font-semibold">"{query}"</span>
+              Showing results for: <span className="font-semibold">{query}</span>
             </p>
           )}
         </div>
@@ -82,7 +82,7 @@ export default function SearchPage() {
 
         {!loading && !error && searchResults.length === 0 && query && (
           <div className="text-center py-12">
-            <p className="text-gray-600 mb-4">No articles found for "{query}"</p>
+            <p className="text-gray-600 mb-4">No articles found for {query}</p>
             <p className="text-sm text-gray-500">Try different keywords or check your spelling</p>
           </div>
         )}

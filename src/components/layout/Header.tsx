@@ -30,7 +30,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center space-x-4">
             <span className="text-gray-600">{currentDate}</span>
-            <span className="text-gray-600">Today's Paper</span>
+            <span className="text-gray-600">Today&apos;s Paper</span>
           </div>
           <div className="flex items-center space-x-4">
             <a href="#" className="text-gray-600">U.S.</a>

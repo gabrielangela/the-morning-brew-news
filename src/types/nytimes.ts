@@ -6,7 +6,7 @@ export interface NYTimesArticle {
   lead_paragraph: string;
   abstract: string;
   print_page?: string;
-  blog?: any[];
+  blog?: unknown[];
   source: string;
   multimedia: MultimediaItem[];
   headline: {

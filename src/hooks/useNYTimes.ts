@@ -59,7 +59,7 @@ export function useNYTimes() {
     return handleApiCall(() => nytimesAPI.getBooksOverview());
   }, [handleApiCall]);
 
-  const getBestsellerList = useCallback(async (listName: string, date?: string): Promise<any> => {
+  const getBestsellerList = useCallback(async (listName: string, date?: string): Promise<unknown> => {
     return handleApiCall(() => nytimesAPI.getBestsellerList(listName, date));
   }, [handleApiCall]);
 

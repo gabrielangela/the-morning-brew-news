@@ -91,7 +91,7 @@ class NYTimesAPI {
   }
 
   // Books API - Get specific bestseller list
-  async getBestsellerList(listName: string, date?: string): Promise<any> {
+  async getBestsellerList(listName: string, date?: string): Promise<unknown> {
     let url = `${NYTIMES_CONFIG.BASE_URLS.BOOKS}/lists`;
     if (date) {
       url += `/${date}`;
@@ -100,7 +100,7 @@ class NYTimesAPI {
     }
     url += `/${listName}.json?api-key=${this.apiKey}`;
     
-    return this.fetchAPI<any>(url);
+    return this.fetchAPI<unknown>(url);
   }
 
   // Get available sections for top stories
