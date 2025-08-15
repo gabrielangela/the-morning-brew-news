@@ -1,11 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-// Using inline SVG instead of Heroicons
+import { useRouter } from 'next/navigation';
 
 export default function SearchBar() {
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearching, setIsSearching] = useState(false);
+  const router = useRouter();
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -13,13 +14,14 @@ export default function SearchBar() {
 
     setIsSearching(true);
     
-    // Simulate search delay
-    setTimeout(() => {
-      console.log('Searching for:', searchQuery);
-      // TODO: Implement actual search functionality
-      alert(`Searching for: "${searchQuery}"`);
+    try {
+      // Navigate to search results page with query parameter
+      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+    } catch (error) {
+      console.error('Search navigation error:', error);
+    } finally {
       setIsSearching(false);
-    }, 1000);
+    }
   };
 
   return (
@@ -55,7 +57,10 @@ export default function SearchBar() {
           {['Politics', 'Technology', 'Business', 'Health', 'Climate'].map((term) => (
             <button
               key={term}
-              onClick={() => setSearchQuery(term)}
+              onClick={() => {
+                setSearchQuery(term);
+                router.push(`/search?q=${encodeURIComponent(term)}`);
+              }}
               className="text-xs text-blue-600 hover:text-blue-800 hover:underline"
             >
               {term}

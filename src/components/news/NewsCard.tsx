@@ -32,14 +32,16 @@ export default function NewsCard({
     <article className="group">
       <Link href={href} className="block">
         {imageUrl && (
-          <div className="mb-3 overflow-hidden">
-            <Image
-              src={imageUrl}
-              alt={title}
-              width={400}
-              height={250}
-              className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-200"
-            />
+          <div className="mb-3 overflow-hidden rounded-lg">
+            <div className="relative w-full aspect-[16/10]">
+              <Image
+                src={imageUrl}
+                alt={title}
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-200"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
           </div>
         )}
         

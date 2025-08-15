@@ -15,12 +15,27 @@ class NYTimesAPI {
     this.apiKey = NYTIMES_CONFIG.API_KEY;
   }
 
-  private async fetchAPI<T>(url: string): Promise<T> {
+  private async fetchAPI<T>(url: string, retries: number = 3): Promise<T> {
     try {
       const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+      
+      if (response.status === 429) {
+        // Rate limit exceeded
+        if (retries > 0) {
+          const retryAfter = response.headers.get('Retry-After');
+          const delay = retryAfter ? parseInt(retryAfter) * 1000 : 2000; // Default 2 seconds
+          console.log(`Rate limited. Retrying after ${delay}ms...`);
+          await new Promise(resolve => setTimeout(resolve, delay));
+          return this.fetchAPI<T>(url, retries - 1);
+        } else {
+          throw new Error('Rate limit exceeded. Please try again later.');
+        }
       }
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status} - ${response.statusText}`);
+      }
+      
       return await response.json();
     } catch (error) {
       console.error('API fetch error:', error);

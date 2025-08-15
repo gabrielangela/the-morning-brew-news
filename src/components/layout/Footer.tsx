@@ -60,11 +60,11 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex flex-wrap items-center space-x-6 text-xs text-gray-600">
               <Link href="#" className="hover:text-black">© 2025 The Morning Brew</Link>
-              <Link href="#" className="hover:text-black">Contact Us</Link>
-              <Link href="#" className="hover:text-black">Work with Us</Link>
-              <Link href="#" className="hover:text-black">Advertise</Link>
-              <Link href="#" className="hover:text-black">Privacy Policy</Link>
-              <Link href="#" className="hover:text-black">Terms of Service</Link>
+              <Link href="https://help.nytimes.com/115015385887-Contact-The-New-York-Times" className="hover:text-black">Contact Us</Link>
+              <Link href="https://www.nytco.com/careers/" className="hover:text-black">Work with Us</Link>
+              <Link href="https://advertising.nytimes.com/" className="hover:text-black">Advertise</Link>
+              <Link href="https://help.nytimes.com/10940941449492-The-New-York-Times-Company-Privacy-Policy" className="hover:text-black">Privacy Policy</Link>
+              <Link href="https://help.nytimes.com/115014893428-Terms-of-Service" className="hover:text-black">Terms of Service</Link>
             </div>
           </div>
         </div>
