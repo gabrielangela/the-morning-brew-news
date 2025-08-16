@@ -7,11 +7,11 @@ import HeroSection from '@/components/news/HeroSection';
 import NewsSection from '@/components/news/NewsSection';
 import { useTopStories, useMostPopular } from '@/hooks/useNYTimes';
 import { nytimesAPI } from '@/lib/nytimes-api';
-import type { TopStoryArticle, PopularArticle } from '@/types/nytimes';
+import type { TopStoryArticle } from '@/types/nytimes';
 
 export default function Home() {
   const { data: topStories, loading: topStoriesLoading } = useTopStories('home');
-  const { data: mostPopular, loading: popularLoading } = useMostPopular('emailed', 7);
+  const { loading: popularLoading } = useMostPopular('emailed', 7);
   const [businessNews, setBusinessNews] = useState<TopStoryArticle[]>([]);
   const [opinionNews, setOpinionNews] = useState<TopStoryArticle[]>([]);
   const [loading, setLoading] = useState(true);
